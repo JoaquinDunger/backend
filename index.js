@@ -9,4 +9,5 @@ let product = {
 
 // manager.createProduct(product).then(result => console.log(result))
 // manager.getAll().then(result => console.log(result))
-manager.getById(1).then(result => console.log(result))
+// manager.getById(1).then(result => console.log(result))
+manager.deleteById(2).then(result => console.log(result))

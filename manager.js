@@ -45,6 +45,19 @@ class Manager {
             return {status: "error", message: err.message}
         }
     }
+
+        deleteById = async (id) => {
+            if (!id) return {status: "error", message: "id required"}
+            if (fs.existsSync(pathToFile)) {
+                let data = await fs.promises.readFile(pathToFile, 'utf-8')
+                let products = JSON.parse(data)
+                let newProducts = products.filter(product => product.id !== id)
+                await fs.promises.writeFile(pathToFile, JSON.stringify(newProducts, null, 2))
+                return {status: "success", message:"user deleted"}
+        } else {
+            return {status: "error", message: err.message}
+        }
+        }
 }
 
 module.exports = Manager
