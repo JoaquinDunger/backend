@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Samsung Galaxy Fold",
+    "price": 120000,
+    "thumbnail": "https://images.samsung.com/ar/smartphones/galaxy-z-fold3-5g/buy/zfold3_carousel_productimage_phantomsilver_mo.jpg",
+    "id": 1
+  },
+  {
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 140000,
+    "thumbnail": "https://tienda.personal.com.ar/images/SG_S22_ultra_Negro_min_234476066d.png",
+    "id": 2
+  }
+]
